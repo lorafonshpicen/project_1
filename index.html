@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap" rel="stylesheet">
+    <style>
+body{
+    font-family: 'Montserrat', sans-serif;
+            height: 100vh;
+            width: 100vw;
+}
+        .section{       
+            display: flex;
+            flex-direction: column;
+            max-height: 664px;
+            max-width: 1400px; 
+            color: #F9F9F9;
+            background-color: #32495E;
+        }
+        .section__columns{
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            margin-left: 115px;   
+            margin-right: 115px;  
+            flex-wrap: wrap;
+        }
+        .section__item{
+            display: flex;
+            flex-direction: column;
+            flex: 0 1 25%;  
+
+        }
+        
+        .section__title{
+            margin-left: 115px;
+            margin-top: 70px;
+            font-weight: 800;
+            font-size: 44px;
+        }
+
+        .item__subtitle{
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            text-decoration: none;
+            color: #F9F9F9;
+        }
+        .item__text{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            position: absolute;
+            display: none;
+            margin-top: 10px;
+        }
+    
+        .section__title{
+        font-weight: 800;
+        font-size: 44px;
+        }
+        
+        .hover_subtitle{
+            padding-bottom: 40px;
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+            color: #F9F9F9;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+        }
+        .item__hover:hover{
+            background-color: #E95258;  
+            
+        }
+
+        .item__hover:hover .item__text{
+            display: block;
+
+        }
+        
+        .item__hover{
+            display: flex; 
+            width:281px;
+            height:170px;
+            margin-top: -5em;
+        }
+        .button{
+            border: 1px solid #F9F9F9;
+            box-sizing: border-box;
+            border-radius: 25px;
+            margin-left: 620px;
+            margin-right: 620px;
+            margin-bottom: 70px;
+            align-items: flex-end;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;  
+            width: 160px;
+            height: 50px;
+            background: transparent;
+            color:  #F9F9F9;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+
+<section class="section">
+
+    <div class="section__title">наши услуги</div>
+        <div class="section__columns">
+            <div class="section__item">
+                <div class="item__img">
+                    <img  src="assets/styles/image3.png" alt=""></div>
+                    
+                        <div class="item__subtitle">Кардио-реабилитационный
+                                центр</div>
+            <div class="item__hover">
+                <a href="#" class="item__subtitle">Кардио-реабилитационный
+                    центр<div class="item__text">Кардиореабилитация представляет собой совокупность восстанавливающих процедур и диагностических методик
+                </div>
+            </a>
+                </div>
+            </div>
+            <div class="section__item">
+                <div class="item__img"><img src="assets/styles/image4.png" alt="">
+            </div>
+            <div class="item__subtitle">Уютное кафе</div>
+            <div class="item__hover">
+                <a href="#" class="item__subtitle">Травма-реабилитационный
+                    центр<div class="item__text">Текст
+                </div>
+            </a>
+                </div>
+            
+            </div>
+            <div class="section__item">
+                <div class="item__img"><img src="assets/styles/image5.png" alt="">
+                
+            </div>
+            <div class="item__subtitle">Уютное кафе</div>
+            <div class="item__hover">
+                <a href="#" class="item__subtitle">Уютное кафе<div class="item__text">Текст
+                </div>
+            </a>
+                </div>
+            
+            </div>
+            <div class="section__item">
+                <div class="item__img"><img src="assets/styles/image6.png" alt="">
+                
+            </div>
+            <div class="item__hover">
+                <a href="#" class="item__subtitle">Сауна высшего класса<div class="item__text">Текст
+                </div>
+            </a>
+                </div>
+            </div>
+    </div>
+</div>
+<div class="section__button">
+<button class="button" type="button">Все услуги</button>
+</div>
+</section>
+</body>
+</html>
