@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap" rel="stylesheet">
-    <style>
-body{
+<!-- /* body{
     font-family: 'Montserrat', sans-serif;
             height: 100vh;
             width: 100vw;
@@ -171,5 +170,152 @@ body{
 <button class="button" type="button">Все услуги</button>
 </div>
 </section>
+</body> */ -->
+<style>
+    
+    .section{
+        width: 1400px;
+        height: 664px;
+        font-family: 'Montserrat', sans-serif;
+        color: #F9F9F9;
+    }
+    .section__bg{
+        background-color: #32495E;
+    }
+    .section__container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 115px;
+    }
+    .section__columns{
+        display: flex;
+        max-width: 1200px;
+        align-items:flex-start;
+        }
+        
+    
+    .section__column{
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 25%; 
+        margin: 10px;
+    }
+   
+    .image__first{
+        max-height: 240px;
+    }
+    .hover__item{
+        position: absolute;
+            width: 281px;
+            height: 170px;
+            transition: background-color 0.3s, transform 0.4s;
+            opacity: 0;
+    }
+    .hover__title{
+             background-color: #E95258;
+            position: absolute;
+            display: none;
+            margin-top: 10px;
+    }
+ 
+    .section__item:hover{
+        transform: scale(110%);
+        transition: background-color 3s, transform 2.5s;
+        opacity: 1;
+    }
+    .section__item:hover {
+        display: block;
+
+    }
+    .button{
+        border: 1px solid #F9F9F9;
+        border-radius: 25px;
+        margin-left: 620px;
+        margin-bottom: 70px;
+            align-items: flex-end;
+    }
+
+
+</style>
+
+</head>
+<body>
+    
+
+<section class="section">
+    <div class="section__bg">
+    <div class="section__container">
+        <h1 class="section__subtitle">
+            НАШИ УСЛУГИ 
+        </h1>
+        <div class="section__columns">
+            <div class="section__column">  
+                <div class="section__item">  
+                <img class="image__first" src="assets/styles/image3.png" alt="Кардио-реаблитационный
+                центр">
+                <div class="columns_title">Кардио-реаблитационный
+                    центр
+            </div></div>  
+            <div class="hover__item">
+                <img class="image" src="assets/styles/image3.png" alt="Кардио-реаблитационный
+                центр">
+                <div class="hover__title">
+            <div class="columns_title">Кардио-реаблитационный
+                центр</div>
+            <div class="text">Кардиореабилитация представляет собой совокупность восстанавливающих процедур и диагностических методик</div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="section__column">
+            <img class="image" src="assets/styles/image4.png" alt="Травма-реабилитационный
+            центр">
+            <div class="columns_title">Травма-реабилитационный
+центр
+        </div>
+        <div class="hover__item">
+            <img class="image" src="assets/styles/image4.png" alt="Травма-реабилитационный
+            центр">
+            <div class="hover__title">
+        <div class="columns_title">Травма-реабилитационный
+            центр</div>
+        <div class="text">Текст</div>
+        </div>
+        </div>
+    </div> 
+
+    <div class="section__column">
+        <img class="image" src="assets/styles/image5.png" alt="Уютное кафе">
+        <div class="columns_title">Уютное кафе
+    </div>
+    <div class="hover__item">
+        <img class="image"  src="assets/styles/image5.png" alt="Уютное кафе">
+        <div class="hover__title">
+    <div class="columns_title">Уютное кафе</div>
+    <div class="text">Текст</div>
+    </div>
+    </div>
+</div> 
+
+<div class="section__column">
+    <img class="image" src="assets/styles/image6.png" alt="Сауна высшего класса">
+    <div class="columns_title">Сауна высшего класса
+</div>
+<div class="hover__item">
+    <img class="image" src="assets/styles/image6.png" alt="Сауна высшего класса">
+    <div class="hover__title">
+<div class="columns_title">Сауна высшего класса</div>
+<div class="text">Текст</div>
+</div>
+</div>
+</div> 
+
+        <!-- </div> class="section__columns" -->
+    </div>
+    <button>Все услуги</button>
+</div>
+    </div>
+    </section>
 </body>
 </html>
