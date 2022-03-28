@@ -15,20 +15,24 @@
 
 
 <style>
-    .columns_title{
+    .columns__title{
         font-weight: 800;
         font-size: 16px; 
         margin: 20px;
+        line-height: 20px;
     }
     .text{
         font-weight: 400;
         font-size: 14px; 
         margin: 20px;
+        margin-right: 0;
+        line-height: 17px;
     }
     .section__subtitle{
         margin-top: 70px;
         font-weight: 800;
         font-size: 44px;
+        line-height: 52px;
     }
     .section{
         width: 100%;
@@ -52,7 +56,8 @@
     .section__columns{
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        justify-content: space-around;
+        align-items:flex-start;
         margin-top: 50px;
         max-width: 1200px;
     }  
@@ -61,43 +66,49 @@
         max-height: 240px;
         width: 281px;
     }
-
+    .image{
+        width: 100%;
+        max-height: 240px;
+    }
     .section__column{
         position: relative;
         display: block;
         margin-left: 10px;
-        width: 281px;
+        max-width: 279px;
+        cursor: pointer;
         
     }
     .hover__item{
         opacity: 0;
         position: absolute;
-        width: 281px;
-        height: 170px;
-        bottom: -50px;
-        background:#E95258;
-        color: #F9F9F9;
-        text-align:start;
-        
+        top: 0;
+        left: 0;
+        right: 0;  
+        bottom: 0;
+        background: rgba(50, 73, 94, 0.6);
+        display: flex;
+        flex-direction: column;
+        transition: opacity .5s ease;
+    }
+    .hover__title{
+        background-color: #E95258;
+        height: 50%;
         
     }
+        
         .section__column:hover .hover__item{
             opacity: 1;
-            transform: scale(105%);
-            transition: background-color 3s, transform 2.5s; 
         } 
-        a{
-            display: block;
-            color: #F9F9F9;
-            text-decoration: none;
+        .hover__item::before{
+            content: url('assets/styles/Vector6.svg');
+            display: flex;
+            margin: auto;
         }
+
         .button{
             border: 1px solid #F9F9F9;
             box-sizing: border-box;
             border-radius: 25px;
-            /* margin-left: 620px;
-            margin-right: 620px; */
-            margin: 0 auto;
             margin-bottom: 70px;
             margin-top: 120px;
             font-style: normal;
@@ -107,13 +118,19 @@
             height: 50px;
             background: transparent;
             color:  #F9F9F9;
+           
+            
         }
         .button:hover {
             background-color: #E95258 ;
             transition: background-color 0.6s ; 
             transform: scale(110%);
 }
-
+.container__button{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+}
 </style>
 
 </head>
@@ -128,17 +145,17 @@
         </h1>
         <div class="section__columns">
             <div class="section__column">  
-                <a href="#" class="section__item">  
+                <div class="section__item">  
                 <img class="image__first" src="assets/styles/image3.png" alt="Кардио-реаблитационный
-                центр"></a> 
-                <div class="columns_title">Кардио-реаблитационный
+                центр"></div> 
+                <div class="columns__title">Кардио-реаблитационный
                     центр
             </div> 
              <div class="hover__item">
                 <!-- <img class="image__first" src="assets/styles/image3.png" alt="Кардио-реаблитационный
                 центр">  -->
                 <div class="hover__title">
-            <div class="columns_title">Кардио-реабилитационный
+            <div class="columns__title">Кардио-реабилитационный
                 центр</div>
             <div class="text">Кардио-реабилитация представляет собой совокупность восстанавливающих процедур и диагностических методик</div>
             </div>
@@ -147,18 +164,18 @@
        
 
         <div class="section__column">
-            <a href="#"  class="section__item"> 
+            <div class="section__item"> 
             <img class="image" src="assets/styles/image4.png" alt="Травма-реабилитационный
             центр">
-            <div class="columns_title">Травма-реабилитационный
+            <div class="columns__title">Травма-реабилитационный
 центр
         </div>
-    </a> 
+    </div> 
         <div class="hover__item">
             <!-- <img class="image" src="assets/styles/image4.png" alt="Травма-реабилитационный
             центр"> -->
             <div class="hover__title">
-        <div class="columns_title">Травма-реабилитационный
+        <div class="columns__title">Травма-реабилитационный
             центр</div>
         <div class="text">Текст</div>
         </div>
@@ -166,15 +183,16 @@
     </div> 
 
     <div class="section__column">
-        <a href="#"  class="section__item"> 
+        <div class="section__item"> 
         <img class="image" src="assets/styles/image5.png" alt="Уютное кафе">
-        <div class="columns_title">Уютное кафе
+        <div class="columns__title">Уютное кафе
     </div>
-</a> 
+</div> 
     <div class="hover__item">
         <!-- <img class="image"  src="assets/styles/image5.png" alt="Уютное кафе"> -->
+        
         <div class="hover__title">
-    <div class="columns_title">Уютное кафе</div>
+    <div class="columns__title">Уютное кафе</div>
     <div class="text">Текст</div>
     </div>
     </div>
@@ -182,21 +200,21 @@
 
 
 <div class="section__column">
-    <a href="#"  class="section__item"> 
+    <div class="section__item"> 
     <img class="image" src="assets/styles/image6.png" alt="Сауна высшего класса">
-    <div class="columns_title">Сауна высшего класса</div>
-</a>
+    <div class="columns__title">Сауна высшего класса</div>
+</div>
 <div class="hover__item">
     <!-- <img class="image" src="assets/styles/image6.png" alt="Сауна высшего класса"> -->
     <div class="hover__title">
-<div class="columns_title">Сауна высшего класса</div>
+<div class="columns__title">Сауна высшего класса</div>
 <div class="text">Текст</div>
 </div>
 </div>
 </div> 
 </div> 
         <!-- </div> class="section__columns" -->
-    
+    <div class="container__button">
     <button class="button">Все услуги</button>
 </div> 
 </div>
