@@ -209,27 +209,30 @@
         width: 281px;
     }
     .hover__item{
+        position: absolute; 
         opacity: 0;  
-        width: 281px;
-         
-    }
-    .hover__title{
-            background-color: #E95258;
-            margin-top: 10px;       
-    }
-
-    a:hover{
+        width: 100%;
+        left: 0;
+        top: 30px;
+        background-color: #E95258;
         transform: scale(110%);
         transition: background-color 3s, transform 2.5s;
-        opacity: 1;
-        position: absolute;     
+        
     }
-    .hover__item a:hover{
-        display: none; 
-           
+    /* .hover__title{
+            background-color: #E95258;
+               
+    } */
+
+    /* a:hover{
+        transform: scale(110%);
+        transition: background-color 3s, transform 2.5s;       
+    } */
+    .section__item:hover .hover__item {
+            display: none; 
             transition: background-color 0.3s, transform 0.4s;
             opacity: 1;
-            position: absolute;
+           
 
     }
     .button{
@@ -239,10 +242,9 @@
         margin-bottom: 70px;
             align-items: flex-end;
     }
-    a{
-        display: block;
-        text-decoration: none;  
-    }
+    .section__item{
+       display: block;
+   }
     
 </style>
 
@@ -258,15 +260,15 @@
         </h1>
         <div class="section__columns">
             <div class="section__column">  
-                <a href="#" class="section__item">  
+                <div class="section__item">  
                 <img class="image__first" src="assets/styles/image3.png" alt="Кардио-реаблитационный
                 центр">
                 <div class="columns_title">Кардио-реаблитационный
                     центр
-            </div></a>  
+            </div></div>  
              <div class="hover__item">
-                <img class="image__first" src="assets/styles/image3.png" alt="Кардио-реаблитационный
-                центр"> 
+                <!-- <img class="image__first" src="assets/styles/image3.png" alt="Кардио-реаблитационный
+                центр">  -->
                 <div class="hover__title">
             <div class="columns_title">Кардио-реаблитационный
                 центр</div>
