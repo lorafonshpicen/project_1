@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,75 +7,94 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap" rel="stylesheet">
+   
 
 </head>
 <body>
 <style>
     .columns__title{
         font-weight: 800;
-        font-size: 16px; 
+        font-size: 16px;
+        line-height: 20px; 
         margin: 20px;
-        line-height: 20px;
     }
+
     .text{
         font-weight: 400;
         font-size: 14px; 
+        line-height: 17px;
         margin: 20px;
         margin-right: 0;
-        line-height: 17px;
     }
+
     .section__subtitle{
         margin-top: 70px;
         font-weight: 800;
         font-size: 44px;
         line-height: 52px;
     }
+
     .section{
         width: 100%;
         height: 100%;
-        font-family: 'Montserrat', sans-serif;
         color: #F9F9F9;
     }
 
     .section__bg{
         background-color: #32495E;
-
     }
+
     .section__container{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        margin-left: 115px;
-        padding: 0 15px;
+        /* margin-left: 115px; */
+        padding: 0 15px;  
+        margin: auto; 
     }
-    
+
     .section__columns{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-wrap: wrap;
         align-items:flex-start;
         margin-top: 50px;
         max-width: 1200px;
     }  
-
-    .image__first{
-        max-height: 240px;
-        width: 281px;
+    @media screen and (max-width: 1200px){
+    .section__columns{
+        max-width: 970px;
     }
+    }
+
+    @media screen and (max-width: 992px){
+    .section__columns{
+        max-width: 750px;
+    }
+    }
+
+    @media screen and( max-width: 767px){
+    .section__columns{
+        max-width: none;
+    }
+    }
+
     .image{
         width: 100%;
         max-height: 240px;
     }
+
     .section__column{
         position: relative;
         display: block;
         margin-left: 10px;
         max-width: 279px;
         cursor: pointer;
-        
     }
-    .hover__item{
+    
+    .hover__item_first,
+    .hover__item_second,
+    .hover__item_third,
+    .hover__item_fourth{
         opacity: 0;
         position: absolute;
         top: 0;
@@ -93,15 +112,40 @@
         
     }
         
-        .section__column:hover .hover__item{
+        .section__column:hover .hover__item_first{
             opacity: 1;
         } 
-        .hover__item::before{
+        .section__column:hover .hover__item_second{
+            opacity: 1;
+        } 
+        .section__column:hover .hover__item_third{
+            opacity: 1;
+        } 
+        .section__column:hover .hover__item_fourth{
+            opacity: 1;
+        } 
+        .hover__item_first::before{
             content: url('assets/styles/Vector6.svg');
             display: flex;
             margin: auto;
         }
+        .hover__item_second::before{
+            content: url('assets/styles/Vector8.svg');
+            display: flex;
+            margin: auto;
+        }
 
+        .hover__item_third::before{
+            content: url('assets/styles/Vector7.svg');
+            display: flex;
+            margin: auto;
+        }
+
+            .hover__item_fourth::before{
+            content: url('assets/styles/Vector9.svg');
+            display: flex;
+            margin: auto;
+            }
         .button{
             border: 1px solid #F9F9F9;
             box-sizing: border-box;
@@ -130,8 +174,6 @@
 
 </head>
 <body>
-    
-
 <section class="section">
     <div class="section__bg">
     <div class="section__container">
@@ -141,12 +183,12 @@
         <div class="section__columns">
             <div class="section__column">  
                 <div class="section__item">  
-                <img class="image__first" src="assets/styles/image3.png" alt="Кардио-реаблитационный
+                <img class="image" src="assets/styles/image3.png" alt="Кардио-реаблитационный
                 центр"></div> 
                 <div class="columns__title">Кардио-реаблитационный
                     центр
             </div> 
-                <div class="hover__item">                
+                <div class="hover__item_first">                
                 <div class="hover__title">
             <div class="columns__title">Кардио-реабилитационный
                 центр</div>
@@ -162,9 +204,8 @@
 центр
         </div>
     </div> 
-        <div class="hover__item">
-            <!-- <img class="image" src="assets/styles/image4.png" alt="Травма-реабилитационный
-            центр"> -->
+        <div class="hover__item_second">
+            
             <div class="hover__title">
         <div class="columns__title">Травма-реабилитационный
             центр</div>
@@ -172,14 +213,13 @@
         </div>
         </div>
     </div> 
-
     <div class="section__column">
         <div class="section__item"> 
         <img class="image" src="assets/styles/image5.png" alt="Уютное кафе">
         <div class="columns__title">Уютное кафе
     </div>
 </div> 
-    <div class="hover__item">      
+    <div class="hover__item_third">      
         <div class="hover__title">
     <div class="columns__title">Уютное кафе</div>
     <div class="text">Текст</div>
@@ -191,8 +231,7 @@
     <img class="image" src="assets/styles/image6.png" alt="Сауна высшего класса">
     <div class="columns__title">Сауна высшего класса</div>
 </div>
-<div class="hover__item">
-    <!-- <img class="image" src="assets/styles/image6.png" alt="Сауна высшего класса"> -->
+<div class="hover__item_fourth">
     <div class="hover__title">
 <div class="columns__title">Сауна высшего класса</div>
 <div class="text">Текст</div>
@@ -204,8 +243,6 @@
     <div class="container__button">
     <button class="button">Все услуги</button>
 </div> 
-</div>
-    
-    </section>
+</div></div>/section>
 </body>
 </html>
