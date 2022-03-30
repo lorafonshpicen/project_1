@@ -35,8 +35,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     /* margin-left: 115px; */
+    max-width: 1200px;
     padding: 0 15px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .section__columns {
@@ -44,7 +45,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     margin-top: 50px;
-    max-width: 1200px;
+
 }
 
 @media screen and (max-width: 1200px) {
