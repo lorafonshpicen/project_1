@@ -1,7 +1,3 @@
-/* body {
-    box-sizing: border-box;
-} */
-
 .columns__title {
     font-weight: 800;
     font-size: 16px;
@@ -17,7 +13,7 @@
     margin-right: 0;
 }
 
-.section__subtitle {
+.subtitle__services {
     margin-top: 70px;
     font-weight: 800;
     font-size: 44px;
@@ -30,11 +26,11 @@
     color: #F9F9F9;
 }
 
-.section__bg {
+.section__services {
     background-color: #32495E;
 }
 
-.section__container {
+.container__services {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -44,7 +40,7 @@
     margin: 0 auto;
 }
 
-.section__columns {
+.services__columns {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -53,19 +49,19 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .section__columns {
+    .services__columns {
         max-width: 970px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .section__columns {
+    .services__columns {
         max-width: 750px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .section__columns {
+    .services__columns {
         max-width: none;
     }
 }
@@ -75,7 +71,7 @@
     max-height: 240px;
 }
 
-.section__column {
+.services__column {
     position: relative;
     display: block;
     margin-left: 10px;
@@ -105,19 +101,19 @@
 
 }
 
-.section__column:hover .hover__item_first {
+.services__column:hover .hover__item_first {
     opacity: 1;
 }
 
-.section__column:hover .hover__item_second {
+.services__column:hover .hover__item_second {
     opacity: 1;
 }
 
-.section__column:hover .hover__item_third {
+.services__column:hover .hover__item_third {
     opacity: 1;
 }
 
-.section__column:hover .hover__item_fourth {
+.services__column:hover .hover__item_fourth {
     opacity: 1;
 }
 
@@ -176,9 +172,10 @@
 .column__news {
     display: inline-block;
     position: relative;
+    font-family: "Nunito", sans-serif;
 }
 
-.section__news .section__subtitle {
+.section__news .subtitle__services {
     color: #32495E;
 }
 
@@ -243,4 +240,109 @@
     font-size: 14px;
     line-height: 17px;
     margin: 10px;
+}
+
+/* конец блока "наши новости и советы" --> */
+
+/* <!-- блок "вопросы и ответы " --> */
+
+.section__quastions {
+    background-color: #32495E;
+    width: 100%;
+    height: 100%;
+    font-family: "Nunito", sans-serif;
+}
+
+.container__quastions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    /* margin-left: 115px; */
+    padding: 0;
+    margin: 0 auto;
+
+    max-width: 1200px;
+
+}
+
+.subtitle__quastions_bg {
+    background-color: #49647D;
+    padding: 0;
+    margin-top: 70px;
+
+
+}
+
+.subtitle__quastions {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 52px;
+    color: #F9F9F9;
+    margin-left: 115px;
+}
+
+.columns__quastions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 109px;
+
+}
+
+.column__quastion {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin-top: 50px;
+
+}
+
+
+.column__quastion__row {
+
+    color: #F9F9F9;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0 auto;
+    /* flex-basis: 100%; */
+    margin-right: 50px;
+    padding: 20px;
+
+}
+
+.column__answer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    margin: 50px;
+
+}
+
+.answer__subtitle {
+    margin: 0;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F9F9F9;
+}
+
+.answer__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F9F9F9;
+}
+
+.quastions__row_icon {
+    max-width: 16px;
+}
+
+.ellipse :hover {
+
+
+    transition: background-color 0.6s;
 }
